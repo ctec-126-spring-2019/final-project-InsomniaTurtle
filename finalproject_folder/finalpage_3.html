@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review Page</title>
+</head>
+<body>
+    <!-- Error Container -->
+    <div id="errorHole"></div>
+    <!-- All the seperate bits and bobs of the form will be located down here VVV -->
+    <Form action="http://ctec.clark.edu/~belgort/formprocessing/processform.php" method="post" id="form">
+        <!-- Personal info section -->
+        <Label for="firstName">Enter your first name</Label><br>
+        <input type="text" name="firstName" id="firstName" maxlength="20">
+        <br><br>
+        <Label for="lastName">Enter your last name</Label><br>
+        <input type="text" name="lastName" id="lastName" maxlength="20">
+        <br><br>
+        <label for="myEmail">Please enter your email</label><br>
+        <input type="email" name="myEmail" id="myEmail">
+        <br><br>
+        <!-- Rate me section -->
+        <label for="rateMe">Please rate the game _____ out of five</label>
+        <label for="one">One</label>
+        <input type="radio" name="rateMe" id="one" value="one"><br>
+        <label for="two">Two</label>
+        <input type="radio" name="rateMe" id="two" value="two"><br>
+        <label for="three">Three</label>
+        <input type="radio" name="rateMe" id="three" value="three"><br>
+        <label for="four">Four</label>
+        <input type="radio" name="rateMe" id="four" value="four"><br>
+        <label for="five">Five</label>
+        <input type="radio" name="rateMe" id="five" value="five"><br>
+        <br><br>
+        <!-- Input section -->
+        <label for="leaveCrit">Leave some constructive criticism</label><br>
+        <input type="text" name="leaveCrit" id="leaveCrit" maxlength="100">
+    </Form>
+    <!-- Jquery area -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    
+    </script>
+</body>
+</html>

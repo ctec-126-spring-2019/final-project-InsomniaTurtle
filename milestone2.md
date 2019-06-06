@@ -1,0 +1,1 @@
+I'm going to store the code from my three pages in a folder in the repository. Each page has the skeleton of what i need to do, and tomorrow i will get started on the fully flushing out each page so that it can be working by milestone 3.

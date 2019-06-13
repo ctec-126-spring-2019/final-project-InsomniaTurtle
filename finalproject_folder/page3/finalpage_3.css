@@ -1,0 +1,20 @@
+body {
+    /* Font */
+    font-family: Arial, Verdana, Sans-Sarif;
+	font-size: 1em;
+    /* Main Background Colors */
+    background-color: #336699;
+    color: black;
+    /* Border Colors, Width, and Style */
+    border-top-color: #FFB908;
+    border-right-color: #32D607;
+    border-bottom-color: #1C30AF;
+    border-left-color: #F40824;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 4px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;

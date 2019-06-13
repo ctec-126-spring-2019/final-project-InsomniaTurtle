@@ -4,46 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="finalpage_2.css">
+    <script src="finalpage_2.js"></script>
     <title>Kill Bill the Mutated Undead Scientist</title>
 </head>
 <body>
+<!-- Javascript Section -->
+<script src="finalpage_2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 <!-- Stat Roller -->
     <h1>Roll your stats</h1>
-    <div id="die1"></div>
-    <div id="die2"></div>
+    <div id="die1" class="dice">0</div>
+    <div id="die2" class="dice">0</div>
+    <br><br><br><br><br>
     
 <!-- Rolling for your stats, which will affect future rolls -->
-    <button onclick="rollemStats()">Roll for Smarts</button><br>
-    <button onclick="rollemStats()">Roll for Chutzpah</button><br>
-    <button onclick="rollemStats()">Roll for Brawn</button><br>
-    <button onclick="rollemStats()">Roll for Cardio</button><br>
+    <button onclick="rollemStats()">Roll for Smarts</button>
+    <h2 id="diceView" style="clear: left;"></h2><br>
+    <button onclick="rollemStats()">Roll for Chutzpah</button>
+    <h2 id="diceView" style="clear: left;"></h2><br>
+    <button onclick="rollemStats()">Roll for Brawn</button>
+    <h2 id="diceView" style="clear: left;"></h2><br>
+    <button onclick="rollemStats()">Roll for Cardio</button>
+    <h2 id="diceView" style="clear: left;"></h2>
     
 <!-- Health Bars and Image representation -->
-    <div id="playerHP"></div><br>
+    <div id="playerHP" class="health">{100HP} placeholder</div><br>
     <div id="playerImage"></div>
     <br><br>
-    <div id="bossHP"></div><br>
+    <div id="bossHP" class="health">{1000HP} placeholder</div><br>
     <div id="bossImage"></div>
     
-<!-- Buttons to roll the four different stat attacks/buffs -->
-    
+
+<!-- Attack Roller -->
+    <h1>Roll for an attack!</h1>
+    <div id="die4" class="dice">0</div>
+    <div id="die5" class="dice">0</div>
+    <div id="die6" class="dice">0</div>
+    <br><br><br><br><br>
+
+    <!-- Buttons to roll the four different stat attacks/buffs -->
     <h2>Mind Stats</h2>
-    <button onclick="rollemAttack()">Smarts</button>
+    <div id="centerMe"><button onclick="rollemAttack()">Smarts</button>
+    <h2 id="diceView2" style="clear: left;"></h2><br>
     <button onclick="rollemAttack()">Chutzpah</button>
+    <h2 id="diceView2" style="clear: left;"></h2><br></div>
     <br>
     <h2>Body Stats</h2>
-    <button onclick="rollemAttack()">Brawn</button>
+    <div id="centerMe"><button onclick="rollemAttack()">Brawn</button>
+    <h2 id="diceView2" style="clear: left;"></h2><br>
     <button onclick="rollemAttack()">Cardio</button>
+    <h2 id="diceView2" style="clear: left;"></h2><br></div>
 
 <!-- The send to the next page button -->
     <h2>Please leave a review, click the button to be transported to the review page</h2>
-    <button onclick="teleport()">Click me</button>
-
-
-<!-- Script Location: Dice Rollers, Dice Functions, and more -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    
-    </script>
+    <button id="centerMeToo" onclick="teleport()">Click me</button>
 </body>
 </html>

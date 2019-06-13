@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="finalpage_3.css">
     <title>Review Page</title>
 </head>
 <body>
+    <!-- Javascript Link -->
+    <script src="finalpage_3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Error Container -->
     <div id="errorHole"></div>
     <!-- All the seperate bits and bobs of the form will be located down here VVV -->
@@ -22,7 +26,7 @@
         <input type="email" name="myEmail" id="myEmail">
         <br><br>
         <!-- Rate me section -->
-        <label for="rateMe">Please rate the game _____ out of five</label>
+        <div id="catch1"><label for="rateMe">Please rate the game _____ out of five</label><br>
         <label for="one">One</label>
         <input type="radio" name="rateMe" id="one" value="one"><br>
         <label for="two">Two</label>
@@ -32,16 +36,42 @@
         <label for="four">Four</label>
         <input type="radio" name="rateMe" id="four" value="four"><br>
         <label for="five">Five</label>
-        <input type="radio" name="rateMe" id="five" value="five"><br>
+        <input type="radio" name="rateMe" id="five" value="five"><br></div>
         <br><br>
         <!-- Input section -->
-        <label for="leaveCrit">Leave some constructive criticism</label><br>
-        <input type="text" name="leaveCrit" id="leaveCrit" maxlength="100">
+        <div id="catch2"><label for="wouldYou">Would you recommend this to your friends?</label><br>
+        <label for="yes">Yes!</label>
+        <input type="radio" name="wouldYou" id="yes" value="yes"><br>
+        <label for="no">Nope!</label>
+        <input type="radio" name="wouldYou" id="no" value="no"></div>
+        <br><br>
+        <label for="difficult">How hard was the game?</label><br>
+        <select name="difficult" id="difficult">
+        <option value="choose">~~Pick a difficulty~~</option>
+        <option value="bab">Baby</option>
+        <option value="ezy">Easy</option>
+        <option value="nor">Normal</option>
+        <option value="med">Medium</option>
+        <option value="hrd">Hard</option>
+        <option value="ded">Apocolypse</option>
+        </select>
+        <br><br>
+        <label for="tableTop">Would you play the tabletop version?</label><br>
+        <select name="tableTop" id="tableTop">
+        <option value="options">~~Pick an option~~</option>
+        <option value="wat">There's a tabletop version?</option>
+        <option value="bsy">My schedule is kind of full.</option>
+        <option value="mby">Maybe, not a for sure though.</option>
+        <option value="nty">No thanks, not my cup of tea.</option>
+        <option value="stb">Sure but i'm not big on tabletop stuff.</option>
+        <option value="hyd">I'm totally up for it!</option>
+        </select>
+        <br><br>
+        <!-- Criticsm Area and Submit button -->
+        <label for="kindly">Would you like to leave some constructive criticism?</label><br>
+        <textarea rows="5" cols="48"></textarea>
+        <br><br>
+        <input type="submit" value="Turn in Form">
     </Form>
-    <!-- Jquery area -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-    
-    </script>
 </body>
 </html>

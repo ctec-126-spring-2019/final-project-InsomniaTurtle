@@ -21,21 +21,26 @@
     <br><br><br><br><br>
     
 <!-- Rolling for your stats, which will affect future rolls -->
-    <button onclick="rollemStats()">Roll for Smarts</button>
+    <button onclick="rollemStats()">Roll for Stats!</button>
+    <h1>Smarts</h1>
     <h2 id="diceView" style="clear: left;"></h2><br>
-    <button onclick="rollemStats()">Roll for Chutzpah</button>
-    <h2 id="diceView" style="clear: left;"></h2><br>
-    <button onclick="rollemStats()">Roll for Brawn</button>
-    <h2 id="diceView" style="clear: left;"></h2><br>
-    <button onclick="rollemStats()">Roll for Cardio</button>
-    <h2 id="diceView" style="clear: left;"></h2>
+    <h1>Chutzpah</h1>
+    <h2 id="diceView2" style="clear: left;"></h2><br>
+    <h1>Brawn</h1>
+    <h2 id="diceView3" style="clear: left;"></h2><br>
+    <h1>Cardio</h1>
+    <h2 id="diceView4" style="clear: left;"></h2>
     
+    <!-- stat container -->
+    <div>
+        <h2 id="stat"></h2><br>
+    </div>
 <!-- Health Bars and Image representation -->
-    <div id="playerHP" class="health">{100HP} placeholder</div><br>
-    <div id="playerImage"></div>
+    <div id="playerHP">Players starting hp is: 9999</div><br>
+    <div id="playerImage"><img src="playerfixed.jpg" alt="player"></div>
     <br><br>
-    <div id="bossHP" class="health">{1000HP} placeholder</div><br>
-    <div id="bossImage"></div>
+    <div id="bossHP">Bills starting hp is: 100000</div><br>
+    <div id="bossImage"><img src="bill.png" alt="boss"></div>
     
 
 <!-- Attack Roller -->
@@ -48,18 +53,27 @@
     <!-- Buttons to roll the four different stat attacks/buffs -->
     <h2>Mind Stats</h2>
     <div id="centerMe"><button onclick="rollemAttack()">Smarts</button>
-    <h2 id="diceView2" style="clear: left;"></h2><br>
+    <h2 id="diceView5" style="clear: left;"></h2><br>
     <button onclick="rollemAttack()">Chutzpah</button>
-    <h2 id="diceView2" style="clear: left;"></h2><br></div>
+    <h2 id="diceView6" style="clear: left;"></h2><br></div>
     <br>
     <h2>Body Stats</h2>
     <div id="centerMe"><button onclick="rollemAttack()">Brawn</button>
-    <h2 id="diceView2" style="clear: left;"></h2><br>
+    <h2 id="diceView7" style="clear: left;"></h2><br>
     <button onclick="rollemAttack()">Cardio</button>
-    <h2 id="diceView2" style="clear: left;"></h2><br></div>
+    <h2 id="diceView8" style="clear: left;"></h2><br></div>
+
+    <!-- Bills atk area -->
+    <div id="billAtk">
+        <h2 id="diceviewBill"></h2>
+    </div>
+    <!-- Health change area -->
+    <div>
+        <h2 id="lifeChange"></h2>
+    </div>
 
 <!-- The send to the next page button -->
     <h2>Please leave a review, click the button to be transported to the review page</h2>
-    <button id="centerMeToo" onclick="teleport()">Click me</button>
+    <form id="centerMe"action="http://127.0.0.1:5500/finalproject_folder/page3/finalpage_3.html"><input type="submit" value="Click Me"></form>
 </body>
 </html>
